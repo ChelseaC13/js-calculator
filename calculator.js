@@ -62,6 +62,12 @@ const badOperation = {
   operation: 'bad',
 }
 
+const nullNumber = { 
+  num1: null,
+  num2: 5,
+  operation: 'bad',
+}
+
 
 
 const operations = ['add', '+', 'subtract', '-', 'multiply', '*', 'divide', '/'];
@@ -72,7 +78,6 @@ const valid = function(input) {
   }else {
    console.log('Please check your inputs! Are your numbers integars? Is your operation: add, subtract, multiply, or divide?');
    return false;
-  //  process.exit(1)
   }
 }
 
@@ -119,3 +124,4 @@ calculate(divideSign);
 calculate(divideZero);
 calculate(badData);
 calculate(badOperation);
+calculate(nullNumber);
